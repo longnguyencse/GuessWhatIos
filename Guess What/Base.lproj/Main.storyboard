@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_What" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFy-xM-vlx"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ox-dQ-v4c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KBg-xv-Tdd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is in your mind?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-IR-U2U">
+                                <rect key="frame" x="16" y="28" width="288" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question-mark-358177_960_720.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7SZ-u5-bOX">
+                                <rect key="frame" x="16" y="69.5" width="288" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="3YY-JV-GOZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="Teo-t5-HyY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="csI-u4-6Gv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="sBO-89-ibh"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGH-AW-tGM">
+                                <rect key="frame" x="112" y="294.5" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8J6-1b-oDv"/>
+                                    <constraint firstAttribute="width" constant="97" id="zgj-8N-46q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPL-6k-Ld9">
+                                <rect key="frame" x="139" y="206" width="42" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdq-BS-CPC">
+                                <rect key="frame" x="137" y="242" width="46" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3U-0n-URl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dGH-AW-tGM" firstAttribute="centerX" secondItem="zdq-BS-CPC" secondAttribute="centerX" id="4G6-8i-EmK"/>
+                            <constraint firstItem="zdq-BS-CPC" firstAttribute="top" secondItem="7SZ-u5-bOX" secondAttribute="bottom" constant="44" id="6d9-Ur-8NS"/>
+                            <constraint firstItem="hPL-6k-Ld9" firstAttribute="top" secondItem="7SZ-u5-bOX" secondAttribute="bottom" constant="8" id="C5B-jc-SXQ"/>
+                            <constraint firstItem="hPL-6k-Ld9" firstAttribute="centerX" secondItem="7SZ-u5-bOX" secondAttribute="centerX" id="MWR-b8-eg6"/>
+                            <constraint firstItem="xd4-IR-U2U" firstAttribute="top" secondItem="nFy-xM-vlx" secondAttribute="bottom" constant="20" id="NEi-XN-xSg"/>
+                            <constraint firstItem="hPL-6k-Ld9" firstAttribute="top" secondItem="7SZ-u5-bOX" secondAttribute="bottom" constant="20" id="S8h-SU-bCG"/>
+                            <constraint firstItem="xd4-IR-U2U" firstAttribute="centerX" secondItem="KBg-xv-Tdd" secondAttribute="centerX" id="TP6-i0-OHv"/>
+                            <constraint firstItem="dGH-AW-tGM" firstAttribute="top" secondItem="zdq-BS-CPC" secondAttribute="bottom" constant="23" id="k2a-5y-6g2"/>
+                            <constraint firstItem="7SZ-u5-bOX" firstAttribute="centerX" secondItem="xd4-IR-U2U" secondAttribute="centerX" id="tNZ-JZ-QqI"/>
+                            <constraint firstItem="zdq-BS-CPC" firstAttribute="centerX" secondItem="hPL-6k-Ld9" secondAttribute="centerX" id="taz-U2-rwt"/>
+                            <constraint firstItem="hPL-6k-Ld9" firstAttribute="centerY" secondItem="7SZ-u5-bOX" secondAttribute="centerY" id="vU9-Lq-cRQ"/>
+                            <constraint firstItem="7SZ-u5-bOX" firstAttribute="top" secondItem="xd4-IR-U2U" secondAttribute="bottom" constant="-1" id="xlq-Mk-zOt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerTextField" destination="dGH-AW-tGM" id="nyc-qa-4oS"/>
+                        <outlet property="questionLabel" destination="hPL-6k-Ld9" id="tfj-Vq-mIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.25" y="-106.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question-mark-358177_960_720.jpg" width="960" height="678"/>
+    </resources>
+</document>
